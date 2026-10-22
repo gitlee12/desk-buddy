@@ -87,6 +87,9 @@ code { font-family: var(--mono); font-size: .9em; background: var(--accent-soft)
 .copy { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; }
 .copy input { font: inherit; font-family: var(--mono); font-size: .9rem; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--fg); width: 240px; max-width: 60vw; }
 .copy button { font: inherit; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line); background: var(--paper); color: var(--fg); cursor: pointer; }
+.shot { margin: 28px 0 0; }
+.shot img { display: block; width: 100%; max-width: 560px; border-radius: 14px; border: 1px solid var(--line); background: #eef1f8; }
+.shot figcaption { color: var(--muted); font-size: .9rem; margin-top: 8px; max-width: 560px; }
 .foot { color: var(--muted); font-size: .88rem; margin-top: 56px; }
 @media (prefers-reduced-motion: no-preference) { .btn { transition: border-color .15s, transform .15s; } .btn:hover { transform: translateY(-1px); } }
 </style>
@@ -119,6 +122,11 @@ code { font-family: var(--mono); font-size: .9em; background: var(--accent-soft)
   <p class="dlnote" id="dlnote">구글 드라이브에서 받아져요. "바이러스 검사를 할 수 없습니다" 화면이 뜨면 <kbd>무시하고 다운로드</kbd>를 누르면 돼요.</p>
   <div class="warn" id="blocked"><b>브라우저가 "차단됨" 또는 "위험할 수 있는 파일"이라고 하면</b>서명 없는 새 파일이라 그래요. Edge: 오른쪽 위 다운로드 목록에서 항목에 마우스 → <kbd>⋯</kbd> → <kbd>유지</kbd> → <kbd>자세히 표시</kbd> → <kbd>그래도 유지</kbd>. Chrome: 다운로드 아이콘 → 항목의 <kbd>⋮</kbd> → <kbd>그래도 다운로드</kbd>(또는 <kbd>보관</kbd>).
     <p class="d" style="margin-top:6px">버튼이 아예 반응이 없으면 드라이브에서 직접 받기: <a href="https://drive.google.com/file/d/1pWCGLFuswCAzBNkhjRRurDWOzDqm11g9/view">Mac</a> · <a href="https://drive.google.com/file/d/1Pfa96qsnYa9AsGhO49Q_LONFbwi_bIeY/view">Windows</a> (열리면 오른쪽 위 다운로드 아이콘)</p></div>
+
+  <figure class="shot">
+    <img src="screenshot.png" alt="바탕화면 위의 모몽가와 괴물. 모몽가를 클릭하면 말 걸기·간식·날씨·뉴스·시간표·오늘 일정·말로 입력·설정 메뉴가 말풍선으로 뜬다" width="900" height="685" loading="lazy">
+    <figcaption>이렇게 생겼어요. 모몽가를 클릭하면 메뉴 말풍선이 떠요. 가끔 괴물이 모몽가 몸을 뺏어가서 머리만 남아 돌려달라고 울어요. 간식을 주면 돌아와요.</figcaption>
+  </figure>
 
   <h2>1. 설치하고 켜기</h2>
   <p class="sub">처음 열 때 경고가 한 번 떠요. 앱이 위험해서가 아니라, 개발자 등록(유료)을 안 한 개인 제작 앱이라 그래요. 아래대로 하면 한 번만 넘기면 끝.</p>
